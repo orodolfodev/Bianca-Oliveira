@@ -1,10 +1,58 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family:'Roboto-Light';
+    src: url('Fontes/Roboto-Light.ttf') format('opentype');
+    font-weight: normal;
+    
+}
+
+@font-face {
+    font-family:'Roboto-Regular';
+    src:url('Fontes/Roboto-Regular.ttf') format('opentype');
+    font-weight: normal;
+    
+}
+
+
 :root{
 
-    --cor0: #642E44;
-    --cor1: #A65D7C;
+    --cor0: #CB6CE6;
+    --cor1: #5079F2;
     --cor2: #F28585;
     --cor3: white;
+    --cor4: black;
+
+    --fonte-principal: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-padrao: Roboto-Light;
+    --fonte-destaque: Roboto-Regular;
+}
+
+
+div.bloco{
+    height: 200px;
+
 
 }
+
+
+header > h1{
+    font-family: var(--fonte-destaque);
+    color:var(--cor1)
+}
+
+nav > a{
+    font-family: var(--fonte-destaque);
+    color:black;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-right: 30px;
+    transition-duration: 0.5s;
+    
+}
+
+
+
+
