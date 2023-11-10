@@ -29,14 +29,11 @@
 }
 
 
-div.bloco{
-    background-image: url();
-    height: 200px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 10px;
-    background-repeat: no-repeat;
+img{
+    margin-top: -20vh;
+   
 }
+
 
 
 header > h1{
@@ -44,17 +41,40 @@ header > h1{
     color:var(--cor1)
 }
 
-nav > a{
+
+
+nav {
     font-family: var(--fonte-destaque);
     color:black;
     font-size: 20px;
     text-decoration: none;
-    border-radius: 3px;
+    font-weight: bold;
+    margin-right: 30px;
+    text-align: center;
+}
+
+nav > a{
+    text-decoration: none;
+    color: black;
     font-weight: bold;
     margin-right: 30px;
    
+ }
+
+ nav > a:hover{
+    text-decoration: underline;
+    background-color:var(--cor0);
+    border-radius: 10px;
+    padding: 5px;
+ }
+
+div.midias{
+    text-align: right;
     
 }
+
+
+
 
 
 
