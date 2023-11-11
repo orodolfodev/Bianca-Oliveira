@@ -28,50 +28,57 @@
     --fonte-destaque: Roboto-Regular;
 }
 
-
-img{
-    margin-top: -20vh;
-   
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 
 
-header > h1{
-    font-family: var(--fonte-destaque);
-    color:var(--cor1)
-}
-
-
-
-nav {
-    font-family: var(--fonte-destaque);
-    color:black;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 30px;
+nav{
     text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 18px;
+    font-weight: bold;
+    
+    
 }
 
 nav > a{
     text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-right: 30px;
-   
- }
-
- nav > a:hover{
-    text-decoration: underline;
-    background-color:var(--cor0);
-    border-radius: 10px;
-    padding: 5px;
- }
-
-div.midias{
-    text-align: right;
-    
+    color: rgb(100, 104, 109);
+    margin: 20px;
 }
+
+
+h1{
+    font-family: var(--fonte-destaque);
+    font-size: 40px;
+    color:#5079F2;
+    text-align: center;
+}
+
+header img{
+    width: 100%;
+    height: 400px;
+}
+
+
+
+p.pp{
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px 10px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+    padding: 30px;
+    margin: 40px;
+    background-color:#CB6CE6;
+    color: white;
+
+}
+
 
 
 
