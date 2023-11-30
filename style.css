@@ -40,71 +40,7 @@ body {
     height: 100vh;
 }
 
-.interface {
-    max-width: 1280px;
-    margin: 0 auto;
-  
-}
 
-.flex {
-    display: flex;
-}
-
-
-
-/* ESTILO DO CABEÇALHO */
-
-header {
-    padding: 10px 4%  10px 10px;
-
-}
-
-header>.interface {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header a {
-    font-family: var(--fonte-destaque);
-    font-weight: 600;
-    color: rgb(105, 93, 93);
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
-    
-}
-
-header  nav.menu-desktop a:hover {
-    color:#5079F2;
-    transform: scale(1.05);
-    
-    
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav.menu-desktop ul li {
-    display: inline-block;
-    padding: 0 40px;
-    font-size: 20px;
-    
-}   
-
-.btn-sociais button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: none;
-    background-color:#5079F2;
-    font-size: 25px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: 2s;
-
-}
 
 
 
