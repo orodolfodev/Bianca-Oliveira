@@ -1,3 +1,4 @@
+/* ESTILO GERAL*/
 @charset "UTF-8";
 
 @font-face {
@@ -34,61 +35,78 @@
     box-sizing: border-box;
 }
 
-.container {
-    max-width: 1080px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+    background-color:#cf8f8f96;
+    height: 100vh;
 }
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+  
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+/* ESTILO DO CABEÇALHO */
 
 header {
-    background-color:white;
-    width: 100%;
-    padding: 10px;
+    padding: 10px 4%  10px 10px;
+
 }
 
-.logo, sociais {
-    width: 50%;
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo, img {
-    width: 400px;
-}
-
-.menu{
-    width: 50%;
-}
-
-.logo, menu {
-    width: 50%;
-}
-
-.menu, nav, a {
-    font-family: var(--fonte-padrao);
-    font-weight: bold;
-    font-size: 20px;
-    color: #5079F2;
+header a {
+    font-family: var(--fonte-destaque);
+    font-weight: 600;
+    color: rgb(105, 93, 93);
     text-decoration: none;
-    padding-right: 30px;
+    display: inline-block;
+    transition: .2s;
     
 }
 
-.menu > nav > a:hover{
-    text-decoration:underline;
-
+header  nav.menu-desktop a:hover {
+    color:#5079F2;
+    transform: scale(1.05);
+    
+    
 }
 
-.sociais, button {
-    width: 40px;
-    height: 40px;
-    background-color:#f9fbff;
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 20px;
+    
+}   
+
+.btn-sociais button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
     border: none;
-    margin-right: 10px;
+    background-color:#5079F2;
+    font-size: 25px;
     cursor: pointer;
+    margin: 0 5px;
+    transition: 2s;
+
 }
 
-.sociais, button, i {
-    font-size: 30px;
-}
+
+
+
 
