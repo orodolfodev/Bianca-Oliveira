@@ -42,6 +42,10 @@ body{
     height: 100vh;
 }
 
+.flex{
+    display: flex;
+}
+
 .container{
     max-width: 1280px;
     margin: 0 auto;
@@ -64,20 +68,67 @@ header a{
     color: #5079F2;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 500;
+    font-family: var(--fonte-principal);
+    
     
     
 }
 
 header nav ul{
     list-style-type: none;
-    font-weight: 200;
+    
+    
 }
 
 header nav ul li{
     display: inline-block;
     padding: 0 40px;
+    
 }
 
+picture img{
+    width: 100%;
+    border-radius: 10px 0px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+}
+
+.apresentação h2{
+   text-align: center;
+   margin-top: 20px;
+   font-family: var(--fonte-principal);
+   color:#355cd3;
+   font-size: 40px;
+}
+
+.apresentação h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+    height: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #5079F2;
+    color: white;
+    font-family: var(--fonte-principal);
+    font-size: 30px;
+ 
+
+}
+
+/* ESTILO TOPO DO SITE */
+
+.apresentação{
+    padding: 40px 4%;
+}
+
+
+section .apresentação .flex{
+    align-items: center;
+    justify-content: center;
+}
 
 
 
