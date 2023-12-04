@@ -63,6 +63,9 @@ header{
 
 .menu {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     
 }
@@ -99,20 +102,58 @@ header{
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-right: 10px;
+    margin-left: 40px;
 }
 
 .sociais button i{
     font-size: 20px;
     color: aliceblue;
     
+    
 }
 
 picture img{
     width: 100%;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.541);
+    border-radius: 10px 10px;
+
 }
 
+main .apresentação h1 {
+    padding: 10px;
+    margin: 10px;
+    min-height: 100px;
+    border-radius: 10px 10px;
+    background-color: #5079F2;
+    color: white;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.541);
+    font-family: var(--fonte-destaque);
+    font-size: 30px;
+    
 
+}
 
+.apresentação h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+main h2{
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    text-align: center;
+    color: #426be7;
+    font-size: 30px;
+    padding-top: 10px;
 
+}
+
+.sobre{
+    padding: 80px 4%;
+
+}
+
+section img p{
+    display: inline-block;
+}
