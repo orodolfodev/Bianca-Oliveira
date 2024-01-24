@@ -37,120 +37,59 @@
     letter-spacing: 1px;
 }
 
+/*Configurações do corpo da página*/
+
 body{
-    background-color: white;
-    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #CB6CE6;
 }
 
-.flex{
+
+/*Configurações do cabeçalho*/
+
+.header,
+.navigation_header,
+.sociais_header{
     display: flex;
-}
-
-.container{
-    max-width: 1280px;
-    margin: 0 auto;
-
-}
-
-/* CONFIGURAÇÃO CABEÇALHO */
-
-header{
-   padding: 40px 4%;
-}
-
-header > .container{
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
 
-header a{
-    color: #5079F2;
+.header{
+    background-color: rgb(188, 218, 241);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.459);
+    justify-content: space-between; 
+    padding: 0 10%;
+    
+}
+
+.navigation_header{
+    gap: 3em;
+}
+
+.sociais_header{
+    gap: 2em;
+}
+
+.navigation_header, a{
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    font-family: var(--fonte-principal);
-    
-    
-    
+    font-family: var(--fonte-destaque);
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.747);
+    transition: 1s;
 }
 
-header nav ul{
-    list-style-type: none;
-    
-    
+.active{
+    background-color: #c669e0;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-header nav ul li{
-    display: inline-block;
-    padding: 0 40px;
-    
-}
-
-picture img{
-    width: 100%;
-    border-radius: 10px 0px;
-    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
-}
-
-.apresentação h2{
-   text-align: center;
-   margin-top: 20px;
-   font-family: var(--fonte-principal);
-   color:#355cd3;
-   font-size: 40px;
-}
-
-.apresentação h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px 10px;
-    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
-    height: 150px;
-    margin-left: 30px;
-    margin-right: 30px;
-    background-color: #5079F2;
-    color: white;
-    font-family: var(--fonte-principal);
-    font-size: 30px;
- 
-
-}
-
-/* ESTILO TOPO DO SITE */
-
-section .apresentação{
-    padding: 40px 4%;
-}
-
-
-.img-topo-site{
-   display: flex;
+.content{
+    text-align: center;
+    padding-top: 30px;
     
 }
-
-.img-topo-site h3{
-    font-weight: 600;
-    font-size: 17px;
-    font-family:var(--fonte-destaque);
-    text-align: justify;
-    text-indent: 20px;
-    
-   
-    
-} 
-
-.img-topo-site img{
-    height: 400px;
-    margin-right: 30px;
-}
-    
-
-
-
-
-
 
 
 
