@@ -63,7 +63,7 @@ body{
 .navigation ul{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .navigation ul li a{
@@ -79,7 +79,7 @@ body{
 }
 
 .navigation i {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .menu{
@@ -145,4 +145,107 @@ figcaption{
     text-align: justify;
 }
 
+/* Configuração footer */
 
+footer{
+    background-color: #5079F2;
+    padding-top: 50px;
+}
+
+.contato{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.info{
+    width: 33.3%;
+}
+
+h3{
+    font-family: var(--fonte-destaque);
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.info p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+}
+
+.info ul{
+    text-align: center;
+}
+
+.list{
+    padding: 0;
+}
+
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+}
+
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #CB6CE6;
+    transition-duration: .5s;
+}
+
+.list li:hover::before{
+    width: 70px;
+}
+
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+
+.social-icons i{
+    color: #000;
+    font-size: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: #2b56d8;
+}
+
+.social-icons i:hover{
+    color: #CB6CE6;
+}
+
+.btn-bar{
+    background-color: #e7c5ee;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.btn-bar p{
+    color: #000;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+}
