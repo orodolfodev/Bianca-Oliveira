@@ -30,7 +30,13 @@
 /*Configurações do corpo da página*/
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #e5c9ec;
+   background-color: #e6aeae;
 }
+
+/* Section - banner */
+
+.banner{
+    width: 100px;
+}
+   
 
