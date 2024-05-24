@@ -1,22 +1,15 @@
-/* ESTILO GERAL*/
-@charset "UTF-8";
 
-@font-face {
-    font-family:'Roboto-Light';
-    src: url('Fontes/Roboto-Light.ttf') format('opentype');
-    font-weight: normal; 
-    
-}
-
-@font-face {
-    font-family:'Roboto-Regular';
-    src:url('Fontes/Roboto-Regular.ttf') format('opentype');
-    font-weight: normal;
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;600&display=swap');
 
 
 :root{
+
+    /* Fontes */
+
+ --fonte-principal:  "Poppins", sans-serif;
+ --fonte-secundaria: "Montserrat", sans-serif;
+
+    /* Paleta de cores */
 
     --cor0: #CB6CE6;
     --cor1: #5079F2;
@@ -24,9 +17,6 @@
     --cor3: white;
     --cor4: black;
 
-    --fonte-principal: Arial, Verdana, Helvetica, sans-serif;
-    --fonte-padrao: Roboto-Light;
-    --fonte-destaque: Roboto-Regular;
 }
 
 
@@ -34,8 +24,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
    
 }
 
@@ -46,206 +34,3 @@ body{
     background-color: #e5c9ec;
 }
 
-
-/*Configurações do cabeçalho*/
-
-.navigation{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 40px;
-    box-shadow: 0 0.1rem 0.5rem #a19b9b;
-    width: 100%;
-    background-color: #e7c5ee; 
-    transition: all 0.5s;
-}
-
-.navigation ul{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-.navigation ul li a{
-    font-family: var(--fonte-destaque);
-    color: #000;
-    font-size: 17px;
-    font-weight: 600;
-    transition: all 0.5s;
-}
-
-.navigation ul li a:hover{
-    color: #5079F2;
-}
-
-.navigation i {
-    font-size: 30px;
-}
-
-.menu{
-    cursor: pointer;
-    display: none;
-}
-
-.menu.bar{
-    display: block;
-    width: 28px;
-    height: 3px;
-    border-radius: 3px;
-    background-color: #5079F2;
-    margin: 5px auto;
-    transition: all 0.3s;
-}
-
-/* Configuração main */
-
-.img-freedom {
-    margin-top: 20px;
-    width: 100%;
-}
-
-figcaption{
-    text-align: center;
-}
-
-
-
-
-.home-text h1{
-    font-family: var(--fonte-principal);
-    font-weight: 700;
-    color: #2b56d8;
-    margin-top: 20px;
-    text-align: center;
-    font-size: 40px;
-    
-}
-
-.sobre h2{
-    width: 1200px;
-    border-radius: 5px;
-    font-family: var(--fonte-destaque);
-    font-size: 30px;
-    text-align: center;
-    margin-top: 30px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #5079F2;
-    color: #fff;
-    
-}
-
-.container {
-    display: flex;
-    margin-top: 20px;
-}
-
-.container p{
-    margin-top: 30px;
-    text-align: justify;
-}
-
-/* Configuração footer */
-
-footer{
-    background-color: #5079F2;
-    padding-top: 50px;
-}
-
-.contato{
-    width: 1140px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.info{
-    width: 33.3%;
-}
-
-h3{
-    font-family: var(--fonte-destaque);
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-.info p{
-    width: 190px;
-    margin: auto;
-    padding: 7px;
-}
-
-.info ul{
-    text-align: center;
-}
-
-.list{
-    padding: 0;
-}
-
-.list li{
-    width: auto;
-    text-align: center;
-    list-style-type: none;
-    padding: 7px;
-    position: relative;
-}
-
-.list li::before{
-    content: '';
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 50%;
-    top: 50%;
-    width: 0;
-    height: 2px;
-    background-color: #CB6CE6;
-    transition-duration: .5s;
-}
-
-.list li:hover::before{
-    width: 70px;
-}
-
-.social-icons{
-    text-align: center;
-    padding: 0;
-}
-
-.social-icons li{
-    display: inline-block;
-    text-align: center;
-    padding: 5px;
-}
-
-.social-icons i{
-    color: #000;
-    font-size: 30px;
-}
-
-a{
-    text-decoration: none;
-}
-
-a:hover{
-    color: #2b56d8;
-}
-
-.social-icons i:hover{
-    color: #CB6CE6;
-}
-
-.btn-bar{
-    background-color: #e7c5ee;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 50px;
-}
-
-.btn-bar p{
-    color: #000;
-    margin: 0;
-    font-size: 16px;
-    padding: 7px;
-}
