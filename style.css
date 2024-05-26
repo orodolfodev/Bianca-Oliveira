@@ -12,7 +12,7 @@
     /* Paleta de cores */
 
     --cor0: #AD3ECD;
-    --cor1: #5079F2;
+    --cor1: #5271FF;
     --cor2: #F28585;
     --cor3: white;
     --cor4: black;
@@ -134,10 +134,11 @@ section{
     background-color: var(--cor0);
     border: 1px solid var(--cor3);
     border-radius: 10px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
     padding: 1.5rem;
 }
 
-.about .row{
+.biography .row{
     display: flex;
     align-items: center;
     font-family: var(--fonte-principal);
@@ -145,6 +146,51 @@ section{
     font-weight: 400;
     gap: 1.5rem;
 }
+
+.container-image{
+    background-color: #AD3ECD;
+    margin-top: 0.6rem;
+    padding: -1rem;
+    border-radius: 3rem;
+    border: 1px solid var(--cor3);
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+}
+
+/* Sobre a TRG */
+
+.about .title{
+    font-size: 2rem;
+    margin: 1.9rem;
+}
+
+.about .title span{
+    color: var(--cor4);
+}
+
+.about .box-container{
+    display: grid;
+    grid-template-columns: 20% 50px 40%;
+    gap: 1.5rem;
+}
+
+.container{
+    border: 1px solid #5271FF;
+    background-color: #5271FF;
+	display: grid;
+    grid-template-columns: 40% 50px 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
