@@ -28,6 +28,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize; */
+    transition: 0.2s linear;
     scroll-behavior: smooth;
    
 }
@@ -39,142 +44,112 @@ body{
    background-color: #e6aeae;
 }
 
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
 /* Header */
 
-.logo img{
-    margin: 0 2rem;
-    padding: 1rem;
-    cursor: pointer;
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: #e6aeae;
+    /* border-bottom: 0.1rem solid #5079F2; */
 }
 
-
-nav ul {
-    position: absolute;
+.header section{
     display: flex;
-    top: 50px;
-    left: 35%;
-    gap: 40%;
-    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
-nav a{
-    text-decoration: none;
-    font-size: 18px;
+.navbar a{
     font-family: var(--fonte-principal);
-    font-weight: bold;
+    font-weight: 600;
+    margin: 0 1rem;
+    font-size: 1.2rem;
     color: var(--cor1);
 }
 
-nav a:hover{
-    color: var(--cor3);
-    text-decoration: underline;
+.navbar a:hover{
+    color: var(--cor0);
+    border-bottom: 0.1rem solid #AD3ECD;
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
 }
 
-.btn-contato {
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    font-family: var(--fonte-principal);
-    font-weight: bold;
+.btn-contato{
+    border: 2px solid var(--cor3);
     background-color: var(--cor1);
+    padding: 0.7rem;
+    border-radius: 5rem;
     color: var(--cor3);
-    top: -5px;
-    left: 250%;
-    border: none;
-    border-radius: 10rem;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 0.8rem;
     cursor: pointer;
+
 }
 
 .btn-contato:hover{
-    background-color: var(--cor0);
-   
+    background-color:var(--cor0);
+    font-size: 0.9rem;
 }
 
-/* Section - banner */
+/* Banner */
 
-.banner img{
-    width: 100%;
-    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
-    margin-bottom: 10px;
+.home-container{
+    background: url("./Imagens/banner.png");
+    /* height: 70vh; */
+    background-position: center;
+    background-size: cover;
+    margin-top: 11%;
+}
+
+.home-container section{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.home-container .btn-contato{
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 54%;
 }
 
 /* Sobre */
 
-.sobre{
-    background-color: #5079F2;
-    width: 90%;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 1rem;
-    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
-}
-
-.sobre h2{
-    font-family: var(--fonte-secundaria);
-    font-size: 30px;
-    color: var(--cor3);
+.title{
+    font-family: var(--fonte-principal);
     text-align: center;
-    padding-top: 30px;
-}
-
-.foto{
-    position: relative;
-    display: flex;
-    margin-top: 35px;
-    padding-left: 50px;
-}
-
-
-.text{
-    position: relative;
-    display: block;
-    width: 50%;
-    height: 300px;
-    font-family: var(--fonte-secundaria);
-    font-size: 14px;
-    left: 45%;
-    padding-top: 40px;
-    padding-bottom: 30px;
-}
-
-.sobre-trg{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    color: var(--cor3);
     background-color: var(--cor0);
-    position: relative;
-    margin-top: 10%;
-    width: 25%;
-    height: 260px;
-    padding: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    border: 1px solid var(--cor3);
+    border-radius: 10px;
+    padding: 1.5rem;
 }
 
-.info-trg p{
+.about .row{
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    align-items: center;
     font-family: var(--fonte-principal);
-    font-size: 14px;
-    color: var(--cor3);
+    font-size: 0.9rem;
+    font-weight: 400;
+    gap: 1.5rem;
 }
 
-.info-trg h2{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-family: var(--fonte-principal);
-    color: var(--cor3);
-}
 
-.info-trg i{
-    display: flex;
-    flex-direction: column;
-   font-size: 45px;
-   padding-left: 135px;
-   color: var(--cor3);
-}
+
+
+
 
 
 
