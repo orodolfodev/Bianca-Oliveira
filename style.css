@@ -154,31 +154,36 @@ section{
     border-radius: 3rem;
     border: 1px solid var(--cor3);
     box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
+    margin-bottom: 1.9rem;
 }
 
 /* Sobre a TRG */
 
-.about .title{
+.title-about{
+    font-family: var(--fonte-principal);
+    text-align: center;
+    color: var(--cor3);
+    background-color: var(--cor0);
+    border: 1px solid var(--cor3);
+    border-radius: 10px;
+    box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.384);
     font-size: 2rem;
-    margin: 1.9rem;
+    padding: 1.5rem;
+    margin: 1.5rem;
 }
 
-.about .title span{
+.title-about span{
     color: var(--cor4);
 }
 
-.about .box-container{
+.about .container{
     display: grid;
-    grid-template-columns: 20% 50px 40%;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
+
 }
 
-.container{
-    border: 1px solid #5271FF;
-    background-color: #5271FF;
-	display: grid;
-    grid-template-columns: 40% 50px 40%;
-}
+
 
 
 
